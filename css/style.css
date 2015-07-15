@@ -1,250 +1,209 @@
 
- 
-2 /* OKFN Brand font, not related to WDMMG. */ 
-3 
- 
-4 /* 
-5 @font-face { 
-6   font-family: 'OpenSansLight'; 
-7   src: url('../img/opensans-light-webfont.eot'); 
-8   src: url('../img/opensans-light-webfont.eot?#iefix') format('embedded-opentype'), url('../img/opensans-light-webfont.woff') format('woff'), url('../img/opensans-light-webfont.ttf') format('truetype'), url('opensans-light-webfont.svg#OpenSansLight') format('svg'); 
-9   font-weight: normal; 
-10   font-style: normal; 
-11 } 
-12  
-13 @font-face { 
-14     font-family: "OpenSansSemibold"; 
-15     font-style: normal; 
-16     font-weight: 600; 
-17     src: url("../img/opensans-semibold-webfont.eot?#iefix") format("embedded-opentype"), url("../img/opensans-semibold-webfont.woff") format("woff"), url("../img/opensans-semibold-webfont.ttf") format("truetype"), url("../img/opensans-semibold-webfont.svg#OpenSansLight") format("svg"); 
-18 } 
-19 */ 
-20 
- 
-21 html { 
-22   background-color: #222222; 
-23 } 
-24 
- 
-25 body { 
-26   min-height: 80%; 
-27 } 
-28 
- 
-29 body, p, blockquote p { 
-30   /* 
-31   font-family: Palatino, georgia, 'times new roman', serif; 
-32   */ 
-33   font-family: 'times new roman', serif; 
-34   font-size: 16px; 
-35   line-height: 25px; 
-36 } 
-37 
- 
-38 blockquote p { 
-39   font-style: italic; 
-40   margin-bottom: 1em; 
-41 } 
-42 
- 
-43 a { 
-44   color: #00bfff; 
-45 } 
-46 
- 
-47 .chromeframe { 
-48   margin-top: 10px; 
-49   padding: 10px; 
-50   border: 1px solid #F00; 
-51   background-color: #FFE; 
-52 } 
-53 
- 
-54 .spaced { 
-55   margin-top: 3em; 
-56   margin-bottom: 0em; 
-57 } 
-58 
- 
-59 #logo { 
-60   padding-top: 1em; 
-61   padding-bottom: 0em; 
-62 } 
-63 
- 
-64 #logo #claim { 
-65   margin-top: -10px; 
-66   font-style: italic; 
-67   /*letter-spacing: 1px;*/ 
-68   color: #999999; 
-69   font-size: 1.1em; 
-70 } 
-71 
- 
-72 #logo a:hover { 
-73   text-decoration: none; 
-74 } 
-75 
- 
-76 .main-header { 
-77   text-align: center; 
-78 } 
-79 
- 
-80 /*  
-81  * Nav and Footer styles based on OKFN brand design.  
-82  */ 
-83 
- 
-84 nav ul li,  
-85 footer, 
-86 footer p { 
-87   font-family: "OpenSansLight", "Helvetica Neue", Helvetica, Arial, sans-serif; 
-88   font-size: 13px; 
-89   line-height: 18px; 
-90 } 
-91 
- 
-92 nav ul.nav.nav-tabs li { 
-93   float: right; 
-94 } 
-95 
- 
-96 nav ul.nav.nav-tabs li a.active { 
-97   color: #000; 
-98   font-weight: bold; 
-99   font-family: OpenSansSemibold, "Helvetica Neue", Helvetica, Arial, sans-serif; 
-100 } 
-101 
- 
-102 footer { 
-103   background: #222222 url('../img/okfn-watermark.png') top right no-repeat; 
-104   margin-top: 50px; 
-105   padding: 0; 
-106 } 
-107 
- 
-108 footer > .inner { 
-109   background: url('../img/footer-bevel.png') top repeat-x; 
-110   padding: 10px 0 30px 0; 
-111   color: #fff; 
-112   text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.2); 
-113   min-height: 190px; 
-114 } 
-115 
- 
-116 footer ul.footer-links { 
-117 } 
-118 
- 
-119 footer a, footer a:hover { 
-120   color: #00bfff; 
-121 } 
-122 
- 
-123 
- 
-124 /*  
-125  * Visualization-specific styles.  
-126  */ 
-127 
- 
-128 #dailybread { 
-129   min-height: 20em; 
-130 } 
-131 
- 
-132 #dailbread #db-topbar div h2 { 
-133   text-transform: none; 
-134 } 
-135 
- 
-136 #dailybread .db-area-title h3 { 
-137   font-family: "OpenSansSemibold", "Helvetica Neue", Helvetica, Arial, sans-serif; 
-138   font-size: 11px; 
-139   line-height: 13px; 
-140 } 
-141 
- 
-142 #browser .filters-current { 
-143   float: right; 
-144 } 
-145 
- 
-146 #browser h2 { 
-147   display: none; 
-148 } 
-149 
- 
-150 #browser table { 
-151   width: 100%; 
-152 } 
-153 
- 
-154 #browser table th { 
-155   text-align: left; 
-156 } 
-157 
- 
-158 #browser table th, 
-159 #browser table tr { 
-160 } 
-161 
- 
-162 #browser .department-facet, 
-163 #browser .clear-search { 
-164   display: none; 
-165 } 
-166 
- 
-167 #browser .num-entries { 
-168   float: right; 
-169   font-style: italic; 
-170 } 
-171 
- 
-172 #browser input[type=text] { 
-173   width: 40em; 
-174   height: 2em; 
-175 } 
-176 
- 
-177 #browser .pager { 
-178   margin-top: 1em; 
-179 } 
-180 
- 
-181 #browser .pager ul li { 
-182   margin-left: 1em; 
-183 } 
-184 
- 
-185 .row .bubbletree-wrapper { 
-186   height: 600px; 
-187   position: relative; 
-188 } 
-189 
- 
-190 #bubbletree { 
-191   margin: 0 auto; 
-192   width: 940px; 
-193   height: 550px; 
-194 } 
-195 
- 
-196 #bubbletree .label { 
-197   background-color: rgba(0,0,0,0); 
-198 } 
-199 
- 
-200 #bubbletree .desc { 
-201   font-family: "OpenSansLight", "Helvetica Neue", Helvetica, Arial, sans-serif; 
-202   font-size: 11px; 
-203   line-height: 13px; 
-204 } 
-205 
- 
-206 #bubbletree .amount { 
-207   font-family: Palatino, georgia, 'times new roman', serif; 
-208   font-size: 14px; 
-209 } 
+/* OKFN Brand font, not related to WDMMG. */
+
+/*
+@font-face {
+  font-family: 'OpenSansLight';
+  src: url('../img/opensans-light-webfont.eot');
+  src: url('../img/opensans-light-webfont.eot?#iefix') format('embedded-opentype'), url('../img/opensans-light-webfont.woff') format('woff'), url('../img/opensans-light-webfont.ttf') format('truetype'), url('opensans-light-webfont.svg#OpenSansLight') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+    font-family: "OpenSansSemibold";
+    font-style: normal;
+    font-weight: 600;
+    src: url("../img/opensans-semibold-webfont.eot?#iefix") format("embedded-opentype"), url("../img/opensans-semibold-webfont.woff") format("woff"), url("../img/opensans-semibold-webfont.ttf") format("truetype"), url("../img/opensans-semibold-webfont.svg#OpenSansLight") format("svg");
+}
+*/
+
+html {
+  background-color: #222222;
+}
+
+body {
+  min-height: 80%;
+}
+
+body, p, blockquote p {
+  /*
+  font-family: Palatino, georgia, 'times new roman', serif;
+  */
+  font-family: 'times new roman', serif;
+  font-size: 16px;
+  line-height: 25px;
+}
+
+blockquote p {
+  font-style: italic;
+  margin-bottom: 1em;
+}
+
+a {
+  color: #00bfff;
+}
+
+.chromeframe {
+  margin-top: 10px;
+  padding: 10px;
+  border: 1px solid #F00;
+  background-color: #FFE;
+}
+
+.spaced {
+  margin-top: 3em;
+  margin-bottom: 0em;
+}
+
+#logo {
+  padding-top: 1em;
+  padding-bottom: 0em;
+}
+
+#logo #claim {
+  margin-top: -10px;
+  font-style: italic;
+  /*letter-spacing: 1px;*/
+  color: #999999;
+  font-size: 1.1em;
+}
+
+#logo a:hover {
+  text-decoration: none;
+}
+
+.main-header {
+  text-align: center;
+}
+
+/* 
+ * Nav and Footer styles based on OKFN brand design. 
+ */
+
+nav ul li, 
+footer,
+footer p {
+  font-family: "OpenSansLight", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+nav ul.nav.nav-tabs li {
+  float: right;
+}
+
+nav ul.nav.nav-tabs li a.active {
+  color: #000;
+  font-weight: bold;
+  font-family: OpenSansSemibold, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+footer {
+  background: #222222 url('../img/okfn-watermark.png') top right no-repeat;
+  margin-top: 50px;
+  padding: 0;
+}
+
+footer > .inner {
+  background: url('../img/footer-bevel.png') top repeat-x;
+  padding: 10px 0 30px 0;
+  color: #fff;
+  text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.2);
+  min-height: 190px;
+}
+
+footer ul.footer-links {
+}
+
+footer a, footer a:hover {
+  color: #00bfff;
+}
+
+
+/* 
+ * Visualization-specific styles. 
+ */
+
+#dailybread {
+  min-height: 20em;
+}
+
+#dailbread #db-topbar div h2 {
+  text-transform: none;
+}
+
+#dailybread .db-area-title h3 {
+  font-family: "OpenSansSemibold", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 11px;
+  line-height: 13px;
+}
+
+#browser .filters-current {
+  float: right;
+}
+
+#browser h2 {
+  display: none;
+}
+
+#browser table {
+  width: 100%;
+}
+
+#browser table th {
+  text-align: left;
+}
+
+#browser table th,
+#browser table tr {
+}
+
+#browser .department-facet,
+#browser .clear-search {
+  display: none;
+}
+
+#browser .num-entries {
+  float: right;
+  font-style: italic;
+}
+
+#browser input[type=text] {
+  width: 40em;
+  height: 2em;
+}
+
+#browser .pager {
+  margin-top: 1em;
+}
+
+#browser .pager ul li {
+  margin-left: 1em;
+}
+
+.row .bubbletree-wrapper {
+  height: 600px;
+  position: relative;
+}
+
+#bubbletree {
+  margin: 0 auto;
+  width: 940px;
+  height: 550px;
+}
+
+#bubbletree .label {
+  background-color: rgba(0,0,0,0);
+}
+
+#bubbletree .desc {
+  font-family: "OpenSansLight", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 11px;
+  line-height: 13px;
+}
+
+#bubbletree .amount {
+  font-family: Palatino, georgia, 'times new roman', serif;
+  font-size: 14px;
+}
